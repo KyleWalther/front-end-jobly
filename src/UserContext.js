@@ -33,7 +33,7 @@ export const UserProvider = ({ children }) => {
 
     const signup = async (userData) => {
         try {
-            const response = await fetch('http://localhost:3001/auth/register', {
+            const response = await fetch('https://back-end-jobly.onrender.com/auth/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(userData),
@@ -54,7 +54,7 @@ export const UserProvider = ({ children }) => {
 
     const login = async (userData) => {
         try {
-            const response = await fetch('http://localhost:3001/auth/token', {
+            const response = await fetch('https://back-end-jobly.onrender.com/auth/token', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(userData),
